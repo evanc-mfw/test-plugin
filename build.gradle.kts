@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.evan.gradle"
-version = "0.0.0"
+version = "0.1.0"
 
 repositories {
     mavenCentral()
@@ -37,12 +37,6 @@ publishing {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
             }
-        }
-    }
-    publications {
-        register<MavenPublication>("gpr") {
-            from(components["java"])
-            //artifact(tasks.getByName("kotlinSourcesJar"))
         }
     }
 }
