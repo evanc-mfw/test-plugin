@@ -7,7 +7,7 @@ class TestPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         project.tasks.create("evanTest") {
             it.doLast {
-                project.logger.lifecycle("Test task completed successfully")
+                project.logger.lifecycle("Test 0.2.0 task completed successfully")
             }
         }
     }
